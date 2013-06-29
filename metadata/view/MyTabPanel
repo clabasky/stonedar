@@ -1,0 +1,77 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "docked": "bottom",
+        "designer|userClassName": "MyTabPanel",
+        "designer|initialView": true
+    },
+    "designerId": "7fdd9787-29c8-4a17-aaec-8e5cc0e3cb40",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 1"
+            },
+            "designerId": "0ae62a73-7b90-43fe-8d69-f90941573ae1",
+            "cn": [
+                {
+                    "type": "Ext.Map",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "1ec54ccc-203a-4883-9e24-85ce45d2ff0f"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 2"
+            },
+            "designerId": "b9b9ae40-4ba1-41e5-84d5-d6a14d61c242"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 3"
+            },
+            "designerId": "a3d09875-6064-43ca-8949-b615b6b77847",
+            "cn": [
+                {
+                    "type": "Ext.Map",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 200
+                    },
+                    "designerId": "fc0e18f6-f3a3-4529-9bc4-1067dc19c852"
+                }
+            ]
+        }
+    ]
+}

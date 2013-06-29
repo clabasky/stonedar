@@ -1,0 +1,46 @@
+{
+    "name": "stonedar",
+    "settings": {},
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "7fdd9787-29c8-4a17-aaec-8e5cc0e3cb40": {
+            "paths": [
+                "metadata/view/MyTabPanel",
+                "app/view/override/MyTabPanel.js",
+                "app/view/MyTabPanel.js"
+            ],
+            "className": "MyTabPanel"
+        },
+        "76fe897e-cbf0-4cf9-b3f8-6b6401ca0dd4": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "2fc1da70-69e7-4506-bdfa-8afd03e5e11a": {
+            "paths": [
+                "metadata/resource/GoogleMapsAPI"
+            ],
+            "className": "GoogleMapsAPI"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "7fdd9787-29c8-4a17-aaec-8e5cc0e3cb40"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "76fe897e-cbf0-4cf9-b3f8-6b6401ca0dd4",
+            "2fc1da70-69e7-4506-bdfa-8afd03e5e11a"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
