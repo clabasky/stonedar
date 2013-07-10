@@ -16,7 +16,9 @@
             "SeshListPanel"
         ],
         "controllers": [
-            "Application"
+            "Application",
+            "SeshListController",
+            "SeshDetailsController"
         ],
         "name": "Stonedar"
     },

@@ -8,26 +8,5 @@
     "userConfig": {
         "designer|userClassName": "Application"
     },
-    "designerId": "97c98796-3989-4ac3-99d9-d9a92d130ac1",
-    "cn": [
-        {
-            "type": "Ext.app.Route",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "url": "list",
-                "fn": "showList",
-                "implHandler": [
-                    "console.log('show list');",
-                    "",
-                    "var panel = Ext.create('Stonedar.view.SeshListPanel', {fullscreen: true});",
-                    ""
-                ]
-            },
-            "designerId": "38e7dea5-ce13-4c45-b22b-5b8a1369238a"
-        }
-    ]
+    "designerId": "97c98796-3989-4ac3-99d9-d9a92d130ac1"
 }

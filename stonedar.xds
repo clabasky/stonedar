@@ -50,6 +50,22 @@
                 "metadata/resource/css"
             ],
             "className": "css"
+        },
+        "1be146a4-e461-44dd-b073-f5b0522170de": {
+            "paths": [
+                "metadata/controller/SeshListController",
+                "app/controller/override/SeshListController.js",
+                "app/controller/SeshListController.js"
+            ],
+            "className": "SeshListController"
+        },
+        "5051db56-dd0f-4f66-9568-718e2bb74390": {
+            "paths": [
+                "metadata/controller/SeshDetailsController",
+                "app/controller/override/SeshDetailsController.js",
+                "app/controller/SeshDetailsController.js"
+            ],
+            "className": "SeshDetailsController"
         }
     },
     "viewOrderMap": {
@@ -60,7 +76,9 @@
             "2762be1f-317c-43c2-9122-abc2b09035c0"
         ],
         "controller": [
-            "97c98796-3989-4ac3-99d9-d9a92d130ac1"
+            "97c98796-3989-4ac3-99d9-d9a92d130ac1",
+            "1be146a4-e461-44dd-b073-f5b0522170de",
+            "5051db56-dd0f-4f66-9568-718e2bb74390"
         ],
         "model": [
             "326228dd-8eb7-4a43-aa76-a79fb1dc1089"

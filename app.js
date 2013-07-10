@@ -29,7 +29,9 @@ Ext.application({
         'SeshListPanel'
     ],
     controllers: [
-        'Application'
+        'Application',
+        'SeshListController',
+        'SeshDetailsController'
     ],
     name: 'Stonedar',
 

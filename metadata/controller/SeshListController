@@ -1,0 +1,49 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "SeshListController"
+    },
+    "designerId": "1be146a4-e461-44dd-b073-f5b0522170de",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "seshListPanel",
+                "selector": "container[itemId=\"SeshListPanel\"]"
+            },
+            "designerId": "1bd5a36f-692a-4df7-912c-9de2a4d3980d"
+        },
+        {
+            "type": "Ext.app.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "list",
+                "fn": "show",
+                "implHandler": [
+                    "var panel = this.getSeshListPanel();",
+                    "if(!panel){",
+                    "    var panel = Ext.create('Stonedar.view.SeshListPanel', {fullscreen: true});",
+                    "}",
+                    "else{",
+                    "    console.log(   \"show list\");",
+                    "}"
+                ]
+            },
+            "designerId": "85a31fcc-989c-4ab2-8876-3f06ab407d3d"
+        }
+    ]
+}

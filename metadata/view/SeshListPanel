@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "itemId": "SeshListPanel",
         "style": "background-color: grey;",
         "designer|userClassName": "SeshListPanel",
         "layout": "fit"
@@ -20,7 +21,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "store": "Seshes"
+                "pressedCls": "itemSelected",
+                "selectedCls": "",
+                "store": "Seshes",
+                "striped": true
             },
             "designerId": "5381d0ab-62ad-4a5c-991d-bfa8822322a7",
             "cn": [

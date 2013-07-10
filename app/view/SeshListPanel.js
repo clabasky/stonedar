@@ -17,6 +17,7 @@ Ext.define('Stonedar.view.SeshListPanel', {
     extend: 'Ext.Container',
 
     config: {
+        itemId: 'SeshListPanel',
         style: 'background-color: grey;',
         layout: {
             type: 'fit'
@@ -34,7 +35,10 @@ Ext.define('Stonedar.view.SeshListPanel', {
                     '</div>',
                     ''
                 ],
-                store: 'Seshes'
+                pressedCls: 'itemSelected',
+                selectedCls: '',
+                store: 'Seshes',
+                striped: true
             }
         ]
     }

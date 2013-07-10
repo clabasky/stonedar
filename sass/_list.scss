@@ -1,3 +1,26 @@
-.listItem {
+.x-list-item {
+    
     background-color: #b7b7b7;
+    border-top: 2px solid #e8e8e8;
+    
+    .x-innerhtml {
+        padding: 22px 25px !important;
+    }
+}
+
+
+.arrowRight {
+        float: right;
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 30px solid #a2a2a2;
+        
+         top:50%;
+        margin:-10px 0 0 -10px;
+}
+
+.itemSelected {
+    background-color: #939393;
 }
