@@ -8,12 +8,24 @@
 }
 /* line 7, ../sass/_viewport.scss */
 .x-list-item .x-innerhtml {
-  padding: 22px 15px !important;
+  padding: 22px 25px !important;
 }
 
 /* line 14, ../sass/_viewport.scss */
 .ml40 {
   margin-left: 40px;
+}
+
+/* line 19, ../sass/_viewport.scss */
+.arrowRight {
+  float: right;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 30px solid #a2a2a2;
+  top: 50%;
+  margin: -10px 0 0 -10px;
 }
 
 /* line 1, ../sass/_list.scss */

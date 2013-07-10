@@ -25,7 +25,14 @@ Ext.define('Stonedar.view.SeshListPanel', {
             {
                 xtype: 'list',
                 itemTpl: [
-                    '<div class="listItem">Start Time {time}</div>'
+                    '<div class="listItem">Start Time {time}',
+                    '    	<br>',
+                    '    meeting place: {place}',
+                    '',
+                    '',
+                    '	<div class="arrowRight"></div>',
+                    '</div>',
+                    ''
                 ],
                 store: 'Seshes'
             }

@@ -33,7 +33,14 @@
                     "codeClass": null,
                     "userConfig": {
                         "implHandler": [
-                            "<div class=\"listItem\">Start Time {time}</div>"
+                            "<div class=\"listItem\">Start Time {time}",
+                            "    \t<br>",
+                            "    meeting place: {place}",
+                            "",
+                            "",
+                            "\t<div class=\"arrowRight\"></div>",
+                            "</div>",
+                            ""
                         ],
                         "designer|displayName": "itemTpl"
                     },
