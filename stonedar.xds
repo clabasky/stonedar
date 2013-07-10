@@ -7,37 +7,67 @@
     "upgradeVersion": 210000000503,
     "framework": "touch22",
     "topInstanceFileMap": {
-        "7fdd9787-29c8-4a17-aaec-8e5cc0e3cb40": {
-            "paths": [
-                "metadata/view/MyTabPanel",
-                "app/view/override/MyTabPanel.js",
-                "app/view/MyTabPanel.js"
-            ],
-            "className": "MyTabPanel"
-        },
         "76fe897e-cbf0-4cf9-b3f8-6b6401ca0dd4": {
             "paths": [
                 "metadata/resource/Library"
             ],
             "className": "Library"
         },
-        "2fc1da70-69e7-4506-bdfa-8afd03e5e11a": {
+        "dbed0b43-04f4-42d5-a8c7-acc46c677dbf": {
             "paths": [
-                "metadata/resource/GoogleMapsAPI"
+                "metadata/view/SeshListPanel",
+                "app/view/override/SeshListPanel.js",
+                "app/view/SeshListPanel.js"
             ],
-            "className": "GoogleMapsAPI"
+            "className": "SeshListPanel"
+        },
+        "2762be1f-317c-43c2-9122-abc2b09035c0": {
+            "paths": [
+                "metadata/store/Seshes",
+                "app/store/override/Seshes.js",
+                "app/store/Seshes.js"
+            ],
+            "className": "Seshes"
+        },
+        "97c98796-3989-4ac3-99d9-d9a92d130ac1": {
+            "paths": [
+                "metadata/controller/Application",
+                "app/controller/override/Application.js",
+                "app/controller/Application.js"
+            ],
+            "className": "Application"
+        },
+        "326228dd-8eb7-4a43-aa76-a79fb1dc1089": {
+            "paths": [
+                "metadata/model/Sesh",
+                "app/model/override/Sesh.js",
+                "app/model/Sesh.js"
+            ],
+            "className": "Sesh"
+        },
+        "439e4475-e4de-4a35-8955-7ad8bc56bdbd": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
         }
     },
     "viewOrderMap": {
         "view": [
-            "7fdd9787-29c8-4a17-aaec-8e5cc0e3cb40"
+            "dbed0b43-04f4-42d5-a8c7-acc46c677dbf"
         ],
-        "store": [],
-        "controller": [],
-        "model": [],
+        "store": [
+            "2762be1f-317c-43c2-9122-abc2b09035c0"
+        ],
+        "controller": [
+            "97c98796-3989-4ac3-99d9-d9a92d130ac1"
+        ],
+        "model": [
+            "326228dd-8eb7-4a43-aa76-a79fb1dc1089"
+        ],
         "resource": [
             "76fe897e-cbf0-4cf9-b3f8-6b6401ca0dd4",
-            "2fc1da70-69e7-4506-bdfa-8afd03e5e11a"
+            "439e4475-e4de-4a35-8955-7ad8bc56bdbd"
         ],
         "app": [
             "application"

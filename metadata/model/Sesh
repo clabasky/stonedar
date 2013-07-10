@@ -1,0 +1,62 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Sesh"
+    },
+    "designerId": "326228dd-8eb7-4a43-aa76-a79fb1dc1089",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "time"
+            },
+            "designerId": "08f3c793-1109-4382-ae42-4c07088b3b43"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "uid"
+            },
+            "designerId": "47fc2778-aa8b-451b-aebd-7060afc760c0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "invite"
+            },
+            "designerId": "233402d2-6826-485e-a2f7-ff6580f94344"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "place"
+            },
+            "designerId": "737c1a1d-e5e2-437c-ac22-407cf40986ee"
+        }
+    ]
+}

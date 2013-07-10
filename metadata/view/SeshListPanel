@@ -1,0 +1,45 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "style": "background-color: grey;",
+        "designer|userClassName": "SeshListPanel",
+        "layout": "fit"
+    },
+    "designerId": "dbed0b43-04f4-42d5-a8c7-acc46c677dbf",
+    "cn": [
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "store": "Seshes"
+            },
+            "designerId": "5381d0ab-62ad-4a5c-991d-bfa8822322a7",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<div class=\"listItem\">Start Time {time}</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "0bf87479-f6f1-4e10-bc78-d04a4006369f"
+                }
+            ]
+        }
+    ]
+}

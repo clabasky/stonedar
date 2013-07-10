@@ -6,10 +6,36 @@
     },
     "codeClass": null,
     "userConfig": {
-        "views": [
-            "MyTabPanel"
+        "models": [
+            "Sesh"
         ],
-        "name": "MyApp"
+        "stores": [
+            "Seshes"
+        ],
+        "views": [
+            "SeshListPanel"
+        ],
+        "controllers": [
+            "Application"
+        ],
+        "name": "Stonedar"
     },
-    "designerId": "application"
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    ""
+                ]
+            },
+            "designerId": "41bc7b85-da48-48f1-a81c-bf309ae94d42"
+        }
+    ]
 }
