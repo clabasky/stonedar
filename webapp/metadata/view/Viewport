@@ -1,0 +1,16 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "html": "fucka you",
+        "itemId": "Viewport",
+        "designer|userClassName": "Viewport",
+        "designer|initialView": true,
+        "layout": "card"
+    },
+    "designerId": "7d2dfb31-825d-474a-a9e0-ecb6002467a8"
+}

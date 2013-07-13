@@ -13,12 +13,17 @@
             "Seshes"
         ],
         "views": [
-            "SeshListPanel"
+            "SeshListPanel",
+            "SeshMapPanel",
+            "TopToolbar",
+            "BottomToolbar"
         ],
         "controllers": [
             "Application",
             "SeshListController",
-            "SeshDetailsController"
+            "SeshDetailsController",
+            "ViewportController",
+            "SeshMapController"
         ],
         "name": "Stonedar"
     },

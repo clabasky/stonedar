@@ -1,0 +1,17 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "docked": "bottom",
+        "height": 80,
+        "html": "bottom",
+        "designer|userClassName": "BottomToolbar",
+        "designer|userAlias": "bottomtoolbar",
+        "layout": "hbox"
+    },
+    "designerId": "4381d2f7-20bd-44c6-93d7-8600493d53c0"
+}

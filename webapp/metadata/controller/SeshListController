@@ -34,12 +34,16 @@
                 "url": "list",
                 "fn": "show",
                 "implHandler": [
+                    "console.log('listy');",
                     "var panel = this.getSeshListPanel();",
+                    "var viewport = Stonedar.app.getController(\"ViewportController\").getViewport();",
+                    "",
                     "if(!panel){",
-                    "    var panel = Ext.create('Stonedar.view.SeshListPanel', {fullscreen: true});",
+                    "    var panel = Ext.create('Stonedar.view.SeshListPanel');",
+                    "    viewport.add(panel);",
                     "}",
                     "else{",
-                    "    console.log(   \"show list\");",
+                    "\tviewport.setActiveItem(panel);",
                     "}"
                 ]
             },

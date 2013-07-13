@@ -1,0 +1,47 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "itemId": "SeshMapPanel",
+        "designer|userClassName": "SeshMapPanel"
+    },
+    "designerId": "8e321808-03ea-447f-86ff-2074bc0eb26f",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "4166e400-d457-45d3-a63b-73399884513e",
+            "masterInstanceId": "0df2fab9-3b21-40a4-82a7-a536c19dbe13"
+        },
+        {
+            "type": "Ext.Map",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 400
+            },
+            "designerId": "6687ca40-2fe7-43e2-a601-775c1297184e"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "5d2f39b4-d832-4657-acd2-770bba09fd02",
+            "masterInstanceId": "4381d2f7-20bd-44c6-93d7-8600493d53c0"
+        }
+    ]
+}

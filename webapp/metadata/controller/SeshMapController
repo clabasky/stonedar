@@ -1,0 +1,53 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "SeshMapController"
+    },
+    "designerId": "12011439-a1c0-4cf4-a64e-627c60c96754",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "seshMapPanel",
+                "selector": "container[itemId=\"SeshMapPanel\"]"
+            },
+            "designerId": "0c65f3c7-dc81-4f86-b92c-1e89bf2d1467"
+        },
+        {
+            "type": "Ext.app.Route",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "map",
+                "fn": "show",
+                "implHandler": [
+                    "console.log('mappp');",
+                    "        var panel = this.getSeshMapPanel();",
+                    "        var viewport = Stonedar.app.getController(\"ViewportController\").getViewport();",
+                    "",
+                    "        if(!panel){",
+                    "            var panel = Ext.create('Stonedar.view.SeshMapPanel');",
+                    "            viewport.add(panel);",
+                    "        }",
+                    "        else{",
+                    "            viewport.setActiveItem(panel);",
+                    "        }"
+                ]
+            },
+            "designerId": "1cdcf0b3-5c37-4023-859b-ce8c0609075d"
+        }
+    ]
+}

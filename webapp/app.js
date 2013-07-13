@@ -26,17 +26,23 @@ Ext.application({
         'Seshes'
     ],
     views: [
-        'SeshListPanel'
+        'SeshListPanel',
+        'SeshMapPanel',
+        'TopToolbar',
+        'BottomToolbar'
     ],
     controllers: [
         'Application',
         'SeshListController',
-        'SeshDetailsController'
+        'SeshDetailsController',
+        'ViewportController',
+        'SeshMapController'
     ],
     name: 'Stonedar',
 
     launch: function() {
 
+        Ext.create('Stonedar.view.Viewport', {fullscreen: true});
     }
 
 });

@@ -66,26 +66,87 @@
                 "app/controller/SeshDetailsController.js"
             ],
             "className": "SeshDetailsController"
+        },
+        "7d2dfb31-825d-474a-a9e0-ecb6002467a8": {
+            "paths": [
+                "metadata/view/Viewport",
+                "app/view/override/Viewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "Viewport"
+        },
+        "c54cacb3-6161-4ece-b9a0-f2504dc04ed8": {
+            "paths": [
+                "metadata/controller/ViewportController",
+                "app/controller/override/ViewportController.js",
+                "app/controller/ViewportController.js"
+            ],
+            "className": "ViewportController"
+        },
+        "8e321808-03ea-447f-86ff-2074bc0eb26f": {
+            "paths": [
+                "metadata/view/SeshMapPanel",
+                "app/view/override/SeshMapPanel.js",
+                "app/view/SeshMapPanel.js"
+            ],
+            "className": "SeshMapPanel"
+        },
+        "0df2fab9-3b21-40a4-82a7-a536c19dbe13": {
+            "paths": [
+                "metadata/view/TopToolbar",
+                "app/view/override/TopToolbar.js",
+                "app/view/TopToolbar.js"
+            ],
+            "className": "TopToolbar"
+        },
+        "4381d2f7-20bd-44c6-93d7-8600493d53c0": {
+            "paths": [
+                "metadata/view/BottomToolbar",
+                "app/view/override/BottomToolbar.js",
+                "app/view/BottomToolbar.js"
+            ],
+            "className": "BottomToolbar"
+        },
+        "12011439-a1c0-4cf4-a64e-627c60c96754": {
+            "paths": [
+                "metadata/controller/SeshMapController",
+                "app/controller/override/SeshMapController.js",
+                "app/controller/SeshMapController.js"
+            ],
+            "className": "SeshMapController"
+        },
+        "5b677c2e-0e49-424d-a19d-f5fd85311597": {
+            "paths": [
+                "metadata/resource/GoogleMapsAPI"
+            ],
+            "className": "GoogleMapsAPI"
         }
     },
     "viewOrderMap": {
         "view": [
-            "dbed0b43-04f4-42d5-a8c7-acc46c677dbf"
+            "dbed0b43-04f4-42d5-a8c7-acc46c677dbf",
+            "7d2dfb31-825d-474a-a9e0-ecb6002467a8",
+            "8e321808-03ea-447f-86ff-2074bc0eb26f",
+            "0df2fab9-3b21-40a4-82a7-a536c19dbe13",
+            "4381d2f7-20bd-44c6-93d7-8600493d53c0"
         ],
         "store": [
             "2762be1f-317c-43c2-9122-abc2b09035c0"
         ],
         "controller": [
             "97c98796-3989-4ac3-99d9-d9a92d130ac1",
+            "5051db56-dd0f-4f66-9568-718e2bb74390",
             "1be146a4-e461-44dd-b073-f5b0522170de",
-            "5051db56-dd0f-4f66-9568-718e2bb74390"
+            "12011439-a1c0-4cf4-a64e-627c60c96754",
+            "c54cacb3-6161-4ece-b9a0-f2504dc04ed8"
         ],
         "model": [
             "326228dd-8eb7-4a43-aa76-a79fb1dc1089"
         ],
         "resource": [
             "76fe897e-cbf0-4cf9-b3f8-6b6401ca0dd4",
-            "439e4475-e4de-4a35-8955-7ad8bc56bdbd"
+            "439e4475-e4de-4a35-8955-7ad8bc56bdbd",
+            "5b677c2e-0e49-424d-a19d-f5fd85311597"
         ],
         "app": [
             "application"

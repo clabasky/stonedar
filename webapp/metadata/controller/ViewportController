@@ -1,0 +1,27 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ViewportController"
+    },
+    "designerId": "c54cacb3-6161-4ece-b9a0-f2504dc04ed8",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "viewport",
+                "selector": "container[itemId=\"Viewport\"]"
+            },
+            "designerId": "fe590eef-be12-4661-97e5-e44ba5f14305"
+        }
+    ]
+}
