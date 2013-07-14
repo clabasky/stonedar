@@ -1,7 +1,8 @@
 //<debug>
 Ext.Loader.setPath({
     'Ext':      'touch/src',
-    'Ext.ux':   './ux'
+    'SlideNav': 'app'
+  //  'Ext.ux':   './ux'
 });
 //</debug>
 
@@ -14,22 +15,24 @@ Ext.application({
 
     views: [
         //'Main',
-        'SeshListPanel',
+        /*'SeshListPanel',
         'TopToolbar',
         'BrowseSeshPanel',
         'SeshDetailsPanel',
         'CreateSeshPanel',
-        'CreateSeshMapPanel',
-     /*   
+        'CreateSeshMapPanel',*/
+        
         'Viewport',
         'Main',
-	'Navigation'*/
+	'Navigation'
     ],
 
     controllers: [
-        'Main',
+       /*
         'BrowseSeshController',
         'CreateSeshController'
+        */
+        'Main'
     ],
     
     models: [
@@ -59,11 +62,15 @@ Ext.application({
     },
 
     launch: function() {
+        console.log('launcy');
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('Stone.view.Main'));
+      //  Ext.Viewport.add(Ext.create('Stone.view.Main'));
+        
+           // Initialize the main view
+        Ext.Viewport.add(Ext.create('Stone.view.Viewport'));
     },
 
     onUpdated: function() {
