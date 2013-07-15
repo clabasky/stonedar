@@ -9,10 +9,7 @@ Ext.define('Stone.view.BrowseSeshPanel', {
             type: 'card'
         },
         items: [
-            {
-                xtype: 'toptoolbar',
-                title: 'Browse Sessions'
-            },
+            
             {
                 xtype: 'seshlistpanel'
             },

@@ -10,6 +10,10 @@ Ext.define('Stone.view.CreateSeshMapPanel', {
         },
         items: [
             {
+                xtype: 'toptoolbar',
+                title: 'Create a Session'
+            },
+            {
                 xtype: 'map'
             }
         ]

@@ -10,6 +10,10 @@ Ext.define('Stone.view.SeshListPanel', {
         },
         items: [
             {
+                xtype: 'toptoolbar',
+                title: 'Browse Sessions'
+            },
+            {
                 xtype: 'list',
                 id: 'SeshList',
                 itemTpl: [

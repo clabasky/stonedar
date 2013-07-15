@@ -10,10 +10,7 @@ Ext.define('Stone.view.CreateSeshPanel', {
             type: 'card'
         },
         items: [
-            {
-                xtype: 'toptoolbar',
-                title: 'Create a Session'
-            },
+            
             {
                 xtype: 'createseshmappanel'
             }
