@@ -1,4 +1,4 @@
-Ext.define('Stone.controller.App',{
+Ext.define('Stone.controller.Main',{
     extend: 'Ext.app.Controller',    
     config:{
             refs:{

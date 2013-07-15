@@ -1,17 +1,16 @@
 Ext.define('Stone.view.Main', {
-    extend: 'Ext.TabPanel',
+    extend: 'Ext.Container',
     xtype: 'main',
     config: {
-        tabBar: {hidden: true},
-        //tabBarPosition : 'bottom',
+        
         items : [
                  {
                     xtype: 'container',
-                    title: 'saucy',
-                    html: 'fucka you',
-                    items : [{
+                    layout: 'card',
+                    height: '100%',
+                    items : [/*{
                         xtype : 'titlebar',
-                        title : 'Slide Nav',
+                        title : 'fuck me 1',
                         docked : 'top',
                         items :[{
                             align : 'left',
@@ -19,7 +18,19 @@ Ext.define('Stone.view.Main', {
                             iconCls : 'list',
                             ui : 'plain'
                         }]
-                    }]
+                    },*/
+                    {
+                        xtype: 'container',
+                        html: 'fuck me1',
+                        items: [
+                            {xtype: 'toptoolbar'}
+                        ]
+                    },
+                    {
+                        xtype: 'container',
+                        html: 'fuck me2'
+                    }
+                    ]
                  }
                  ]
     }
