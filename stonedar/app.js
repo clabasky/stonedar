@@ -23,7 +23,9 @@ Ext.application({
         
         'Viewport',
         'Main',
-	'Navigation'
+	'Navigation',
+        
+        'ActivityPanel'
     ],
 
     controllers: [
@@ -31,7 +33,8 @@ Ext.application({
         'BrowseSeshController',
         'CreateSeshController',
         
-        'Main'
+        'Main',
+        'ActivityController'
     ],
     
     models: [

@@ -10,7 +10,25 @@ Ext.define('Stone.view.CreateSeshMapPanel', {
         },
         items: [
             {
-                xtype: 'map'
+                xtype: 'map',
+                mapOptions: {
+                    //center: //new google.maps.LatLng(55.6468, 37.581),
+                    styles: [
+                        {
+                          "stylers": [
+                            { "visibility": "on" },
+                            { "invert_lightness": true },
+                            { "saturation": -100 },
+                            { "gamma": 1.37 }
+                          ]
+                        }
+                      ],
+                    zoom: 12,
+                    panControl: false,
+                    scaleControl: false,
+                    mapTypeControl: false,
+                    zoomControl: false
+                }
             }
         ]
     }

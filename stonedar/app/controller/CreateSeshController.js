@@ -6,7 +6,8 @@ Ext.define('Stone.controller.CreateSeshController', {
         },
 
         refs: {
-	    createSeshPanel: 'createseshpanel'
+	    createSeshPanel: 'createseshpanel',
+	    createSeshMap: 'createseshmappanel > map'
         }
     },
 
@@ -14,22 +15,19 @@ Ext.define('Stone.controller.CreateSeshController', {
         
         this.control({
 	    
-	    
-           /*
-            '#SeshList' : {
-                itemtap: this.showDetails
-            },
-            'button[itemId="BackToBrowseBtn"]' : {
-                tap: this.backToBrowse
-            }
-            */
+	    createSeshMap : {
+		maprender : this.initializeMap
+	    }
+           
         });
 	
     },
     
-    createSeshMapVisible: function(){
-	console.log('suspendy');
-	this.getCreateSeshPanel().suspendEvents();
+    initializeMap: function(){
+	var mapPanel = Stone.app.getController('CreateSeshController').getCreateSeshMap();
+	var map = mapPanel.getMap();
     }
+    
+    
 
 });

@@ -5,10 +5,15 @@ Ext.define('Stone.view.Navigation', {
     config: {
         cls : 'nav-list',
         itemTpl : '{title}',
-        data : [{
+	pressedCls: '',
+	selectedCls: 'selectedCls',
+        data : [
+		/*{
                     title : 'Activity',
 		    value: 'activity'
-                },{
+                },
+                */
+		{
                     title : 'Browse Sessions',
 		    value : 'browse'
                 },{

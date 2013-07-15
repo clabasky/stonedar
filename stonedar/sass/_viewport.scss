@@ -1,1 +1,45 @@
+$font-family: 'Verdana';
 
+
+$include-border-radius: false;
+$bbbColor: 'red';
+
+@import 'sencha-touch/default/all';
+
+
+
+
+//$black: 'black';
+//@include bevel-by-background($black);
+/*
+$base-color: #adadad;
+$active-color: #aaaaaa;4
+
+$base-gradient: 'matte';
+$tabs-dark: darken($base-color, 20%);
+$tabs-dark-active-color: saturate($active-color, 20%);
+$tabs-bottom-active-gradient: 'recessed';
+
+
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+@include sencha-carousel;
+@include sencha-form;
+@include sencha-msgbox;
+@include sencha-loading-spinner;
+
+
+@include pictos-iconmask('list');
+@include pictos-iconmask('time_repeat');
+@include pictos-iconmask('twitter2');*/

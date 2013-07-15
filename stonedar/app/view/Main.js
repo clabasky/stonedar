@@ -9,7 +9,7 @@ Ext.define('Stone.view.Main', {
                     layout: 'card',
                     height: '100%',
                     items : [
-                        
+                       // {xtype: 'activitypanel'},
                         {xtype: 'browseseshpanel'},
                         {xtype: 'createseshpanel'}
                     ]

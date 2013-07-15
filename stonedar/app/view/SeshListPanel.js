@@ -24,6 +24,7 @@ Ext.define('Stone.view.SeshListPanel', {
                 ],
                 pressedCls: 'itemSelected',
                 selectedCls: '',
+                //selectedCls: 'itemSelected',
                 store: 'Seshes',
                 striped: true
             }

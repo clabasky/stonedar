@@ -30,7 +30,8 @@ Ext.define('Stone.controller.Main',{
         var mainNav = Stone.app.getController('Main').getMainNav();
         
         if('activity' == value){
-            
+            var activity = Stone.app.getController('ActivityController').getActivityPanel();
+            mainNav.setActiveItem(activity);
         }
         if('browse' == value){
             var browse = Stone.app.getController('BrowseSeshController').getBrowseSeshPanel();
