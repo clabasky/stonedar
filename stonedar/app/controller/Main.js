@@ -4,11 +4,8 @@ Ext.define('Stone.controller.Main',{
             refs:{
                 main : 'main',
                 navigation : 'navigation',
-                mainNav : 'main > container',
                 
-                navBtn : 'button[name="nav_btn"]',
-                
-                
+                navBtn : 'button[name="nav_btn"]'
             },
 
             control : {
@@ -18,28 +15,10 @@ Ext.define('Stone.controller.Main',{
                 
                 navigation : {
                     itemtap : function(list, index, target, record){
-                        this.navListItemTap(record.data.value);
                         this.toggleNav();
                     }
                 }
             }
-    },
-    
-    navListItemTap: function(value){
-        
-        var mainNav = Stone.app.getController('Main').getMainNav();
-        
-        if('activity' == value){
-            
-        }
-        if('browse' == value){
-            var browse = Stone.app.getController('BrowseSeshController').getBrowseSeshPanel();
-            mainNav.setActiveItem(browse);
-        }
-        if('create' == value){
-            var create = Stone.app.getController('CreateSeshController').getCreateSeshPanel();
-            mainNav.setActiveItem(create);
-        }
     },
     
     /**

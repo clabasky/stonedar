@@ -6,14 +6,11 @@ Ext.define('Stone.view.Navigation', {
         cls : 'nav-list',
         itemTpl : '{title}',
         data : [{
-                    title : 'Activity',
-		    value: 'activity'
+                    title : 'Activity'
                 },{
-                    title : 'Browse Sessions',
-		    value : 'browse'
+                    title : 'Browse Sessions'
                 },{
-                    title : 'Create a Session',
-		    value : 'create'
+                    title : 'Create a Session'
         }]
     }
 });
