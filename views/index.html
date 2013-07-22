@@ -76,6 +76,18 @@
             socket.on('reconnect_failed', function(){
                 
             });
+            
+            
+            ////////////////
+            
+            socket.on('sesh', function(data){
+                console.log(data);
+            });
+            
+            socket.on('pushalert', function(data){
+                alert(data.message);
+            });
+            
         }
     </script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN6RdCmkwyzxilsx_b8-y2gICaDiqO4jY&sensor=true"></script>

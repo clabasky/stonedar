@@ -1,5 +1,9 @@
+//require('./mongo.js');
+//var db = require('./mongo.js');
 
-require('./mongo.js');
+users = require('./routes/users');
+sessions = require('./routes/sessions');
+
 var http = require('http');
 var fs = require('fs');
 
@@ -9,7 +13,8 @@ var app = express();
 
 app.configure(function(){
 	app.set('view options', {layout: false});
-	app.use(express.static(__dirname + '/public'));	
+	app.use(express.static(__dirname + '/public'));
+        app.use(express.bodyParser());
 });
 
 
@@ -28,57 +33,49 @@ app.get('/home', function(req, res){
 });
 
 
+app.post('/users/newuser', users.newUser);
+app.post('/users/login', users.login);
+app.get('/users/:id', users.findById);
 
+//app.get('/sessions/getlocal/:latlng', sessions.getLocal);
+app.post('/sessions/createnew', sessions.createNew);
 server = http.createServer(app);
-var io = require('socket.io').listen(server);
-//var io = require('socket.io').listen(app);
-
 server.listen(8080);
+
+
+ 
 
 //*********************
 // Socket.io Functions
 //*********************
 
+var clients = {};
 
-var votes = new Array();
+var io = require('socket.io').listen(server);
 
 io.sockets.on('connection', function(socket){
-
-    console.log("Connection " + socket.id + " accepted.");
     
-	socket.on('vote', function(vote){
-	    // record vote
-	    console.log("Client " + socket.id + " voted " + vote);
-		votes[socket.id] = vote;
-		print_votes();
-	});
+    clients[socket.id] = socket;
     
-	socket.on('ticker', function(fn){
-	    console.log("Sending vote average to client " + socket.id);
-		var total = 0, ctr = 0;
-		for(var v in votes){
-			total += votes[v];
-		    ctr++;
-		}
-		// return vote average to client
-		var average = total/ctr;
-		console.log("Average: " + total + "/" + ctr + " = " + average);
-		fn(average);
-	});
-
+    
+    // console.log("Connection " + socket.id + " accepted.");
+    
+    // socket.emit('pushalert', {message: 'welcome to the chat'});
+   console.log(socket.id);
+    socket.on('sesh', function(session){
+        console.log(session);
+        
+        //any logic to change data
+        
+        //response
+        socket.emit('sesh', db.sessions.find());
+    });
+    
+    
     socket.on('disconnect', function(){
         console.log("Connection " + socket.id + " terminated.");
     });
-    
-});
 
-
-db.users.find({}, function(err, users){
-    if(err || !users.length) console.log('fukkkk theres an error');
-    
-    else users.forEach(function(user){
-	console.log('user found! -' + user.email);
-    });
 });
 
 
