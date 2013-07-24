@@ -1,5 +1,5 @@
-//require('./mongo.js');
-//var db = require('./mongo.js');
+
+ db = require('./mongo.js');
 
 users = require('./routes/users');
 sessions = require('./routes/sessions');
@@ -28,14 +28,14 @@ app.engine('html', function(filename, options, callback){
 
 
 //load the sencha app
-app.get('/home', function(req, res){
+app.get('/', function(req, res){
     res.render('index.html', { title: 'stonedar' });
 });
 
 
-app.post('/users/newuser', users.newUser);
+app.post('/users/signup', users.signUp);
 app.post('/users/login', users.login);
-app.get('/users/:id', users.findById);
+app.get('/users/getbyid/:id', users.findById);
 
 //app.get('/sessions/getlocal/:latlng', sessions.getLocal);
 app.post('/sessions/createnew', sessions.createNew);
@@ -60,15 +60,25 @@ io.sockets.on('connection', function(socket){
     
     // console.log("Connection " + socket.id + " accepted.");
     
-    // socket.emit('pushalert', {message: 'welcome to the chat'});
-   console.log(socket.id);
+   sessions.find({}, function(data){
+            console.log(data);
+            // socket.emit('sesh', data);
+        });
+   
+   /*
+    socket.on('pushalert', function(first, second){
+        console.log(first);
+        console.log(second);
+    });
+    */
+   
     socket.on('sesh', function(session){
         console.log(session);
         
         //any logic to change data
         
         //response
-        socket.emit('sesh', db.sessions.find());
+        
     });
     
     
@@ -79,3 +89,27 @@ io.sockets.on('connection', function(socket){
 });
 
 
+
+
+/*
+ //scraper code
+
+var request = require('request');
+var cheerio = require('cheerio');
+
+
+
+    var url = 'http://sf.funcheap.com/today/';
+    request(url, function(err, resp, body) {
+        if (err) throw err;
+        else{
+            console.log(body);
+            $ = cheerio.load(body);
+            $('span').each(function() {
+    console.log($(this).text());
+});
+        //    console.log($);    
+        }
+        
+    });
+*/

@@ -84,9 +84,12 @@
                 console.log(data);
             });
             
-            socket.on('pushalert', function(data){
-                alert(data.message);
+            socket.on('pushalert', function(other, data){
+                console.log(other);
+                console.log(data);
             });
+            
+            socket.emit('pushalert', 'take first param', 'sec param');
             
         }
     </script>

@@ -4,7 +4,7 @@ db = require('mongojs').connect(dburl, collections);
 
 db.sessions.ensureIndex({lat:1, lng:1}, {unique: true});
 
-/*
+
 exports.getLocal = function(req, res){
     var latlng = req.params.latlng;
     
@@ -15,18 +15,43 @@ exports.getLocal = function(req, res){
     
     db.sessions.find({lat: {'$gte': "", '$lt': ""}, lng: {'$gte': "", '$lt': ""}, startTime: {'$gte': now}});
     console.log(lat + " ---- " + lng);
-    //console.log(req.params.lng);
+    
     res.send('fukckck you!!!');
 };
-*/
+
 
 exports.createNew = function(req, res){
     var data = req.body;
-    console.log(data);
+    //console.log(data);
     db.sessions.save({
        lat: data.lat,
        lng: data.lng,
        rsvpNumb: data.rsvpNumb,
        createdTime: new Date()
     });
+};
+
+
+exports.find = function(data, callback){
+    if(!data){
+        var data = {};
+    }
+        
+    db.sessions.find(data, function(err, sessions){
+        if(err) {
+            console.log(err);
+            callback( "DB error");
+        }
+        else{
+            var seshArr = []
+            sessions.forEach(function(session){
+            seshArr.push(session);
+           
+            });
+            //console.log(seshArr);
+             callback( seshArr);
+        }
+        
+    });
+    
 };

@@ -6,6 +6,8 @@ db = require('mongojs').connect(dburl, collections);
 //ensures unique sessions
 db.sessions.ensureIndex({lat: 1, lng: 1}, {unique: true});
 
+exports.db = db;
+
 function session(obj){
     this.time = obj.time;
     this.lat = obj.lat;

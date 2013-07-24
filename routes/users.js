@@ -5,7 +5,7 @@ db = require('mongojs').connect(dburl, collections);
 db.users.ensureIndex({email: 1}, {unique: true});
 
 
-exports.newUser = function(req, res){
+exports.signUp = function(req, res){
     if(req.body.email && req.body.password){
 	db.users.save({
 	email: req.body.email,
